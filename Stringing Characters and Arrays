@@ -1,0 +1,74 @@
+part 1 
+
+
+if (String(num).includes('.')){
+    console.log(String(num).length-1);
+    } else {
+    console.log(String(num).length);
+    } 
+
+
+part 2 
+
+let dna= " TCG-TAC-gaC-TAC-CGT-CAG-ACT-TAa-CcA-GTC-cAt-AGA-GCT "; 
+let newString= dna.trim(); 
+console.log(newString); 
+
+let dna = " TCG-TAC-gaC-TAC-CGT-CAG-ACT-TAa-CcA-GTC-cAt-AGA-GCT    ";
+dna = dna.trim().toUpperCase();
+console.log(dna);
+
+dna = dna.replace('GCT','AGG');
+console.log(dna);  
+
+console.log(dna.slice(16,19));
+
+console.log(`${dna.slice(4,7).toLowerCase()}o ${dna.slice(dna.indexOf('CAT'),dna.indexOf('CAT')+3).toLowerCase()}`);
+
+part 3
+console.log(language.slice(0,1)+language.slice(4,5));
+console.log(`The abbreviation for '${language}' is '${initials}'.`)
+
+
+let practiceFile = [273.15];
+practiceFile.push(42);
+console.log(practiceFile);
+practiceFile.push(false, -4.6, "87");
+console.log(practiceFile);
+
+let cargoHold = ['oxygen tanks', 'space suits', 'parrot', 'instruction manual', 'meal packs', 'slinky', 'security blanket']; 
+
+cargoHold[5] = 'space tether';
+console.log(cargoHold); 
+
+console.log(cargoHold.shift());
+console.log(cargoHold);
+
+console.log(`The array ${cargoHold} has a length of ${cargoHold.length}.`);
+
+cargoHold.splice(3,0,'keys');
+console.log(cargoHold);
+
+cargoHold.splice(2,3,'cat','fob','string cheese');
+console.log(cargoHold);
+
+holdCabinet1 ['duct tape', 'gum', 3.14, false, 6.022e23]
+holdCabinet2 ['orange drink', 'nerf toys', 'camera', 42, 'parsnip']
+console.log(holdCabinet1.concat(holdCabinet2));
+console.log(holdCabinet1); 
+
+holdCabinet1.reverse();
+holdCabinet2.sort();
+console.log(holdCabinet1);
+console.log(holdCabinet2);
+
+console.log(str.split()); 
+console.log(str.split('e'));
+console.log(str.split(' '));
+console.log(str.split('')); 
+
+let element1 = ['hydrogen', 'H', 1.008];
+let element2 = ['helium', 'He', 4.003];
+let element26 = ['iron', 'Fe', 55.85];
+
+console.log(table[1], table[1][1]);
